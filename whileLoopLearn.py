@@ -60,13 +60,37 @@
 # [1] [2] [3] [4] [5] [6]
 
 
-number = 0
-new_number = int(input("Insert a number to start the loop..\n"))
+# number = 0
+# new_number = int(input("Insert a number to start the loop..\n"))
 
-while number < new_number:
-  print("[",number + 1,"] ")
-  number += 1
- 
+# while number < new_number:
+#   print("[",number + 1,"] ")
+#   number += 1
+
+
+# ---------------------------------------------------------------------
+
+# Challenge 2
+# Write a program with a while loop that computes the sum of the first n positive integers:
+# sum = 1 + 2 + 3 + ... + n
+# Examples:
+# n = 5    sum = 15
+# n = 19  sum = 190
+
+number = int(input("Insert a number to start the sum..\n"))
+sum = 0
+counter = 0 
+
+while counter <= number:
+  sum = sum + counter
+  counter += 1
+
+print(f"{sum}")
+print("\nn = ", number, " sum = ",sum,"\n\n")
+
+
+
+
 
 
   
