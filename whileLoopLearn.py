@@ -77,16 +77,51 @@
 # n = 5    sum = 15
 # n = 19  sum = 190
 
-number = int(input("Insert a number to start the sum..\n"))
-sum = 0
-counter = 0 
+# number = int(input("Insert a number to start the sum..\n"))
+# sum = 0
+# counter = 0 
 
-while counter <= number:
-  sum = sum + counter
-  counter += 1
+# while counter <= number:
+#   sum = sum + counter
+#   counter += 1
 
-print(f"{sum}")
-print("\nn = ", number, " sum = ",sum,"\n\n")
+# print(f"{sum}")
+# print("\nn = ", number, " sum = ",sum,"\n\n")
+
+# ---------------------------------------------------------------------
+
+# p = int(input("Please enter an increment\n\n"))
+# q = int(input("Please enter an ending number\n\n"))
+# counter = 10
+# number = 10
+# starting_number = (10 % p) + 10
+# while counter < q:
+#   print(starting_number,end=", ")
+#   starting_number = starting_number + p
+#   counter += p
+
+# ---------------------------------------------------------------------
+
+import random
+
+dirty = True
+scrub_count = 0
+
+
+while (dirty):
+  scrub_count += 1
+  print("Scrub the pan: {}" .format(scrub_count))
+  print("Rinse & check if is clean")
+
+  if not random.randint(0,9):
+    print("All clean!")
+    dirty = False
+  else:
+    print("Still dirty..")
+
+
+# ---------------------------------------------------------------------
+
 
 
 
