@@ -186,5 +186,67 @@ print(string_3.isupper())         #test if string contains upper case
 print(string_3.islower())         #test if string contains lower case
 print(string_3.isspace())         #test if string contains spaces
  
+print("---------------------")
 
+string_4 = "Hello World"
  
+# replacing part of a string
+print("Replacing part of a string...\n{0}"
+      .format(string_4.replace("Hello", "Goodbye")),
+      "\n")
+
+      #Changing Upper and Lower Case Strings
+string_upper_Case = "hElLo wOrlD"
+print("Making a string upper case...\n{0}"
+      .format(string_upper_Case.upper()),
+      "\n")
+
+string_lower_Case = "hElLo wOrlD"
+print("Making a string upper case...\n{0}"
+      .format(string_lower_Case.lower()),
+      "\n")
+
+print("Making a string title case...\n{0}"
+      .format(string_4.title()),
+      "\n")
+
+print("Making a string capitalised...\n{0}"
+      .format(string_4.capitalize()),
+      "\n")
+  
+print("Making a string swap case...\n{0}"
+      .format(string_4.swapcase()),
+      "\n")
+
+print("Reversing and inserting characters to a string...\n{0}"
+      .format(" ".join(reversed(string_4))))
+
+print("---------------------\n")
+
+original_string = "Hello, World!"
+reversed_iterator = reversed(original_string)
+
+# Convert the reversed iterator back to a string
+reversed_string = ''.join(reversed_iterator)
+
+print("Original string:", original_string)
+print("Reversed string:", reversed_iterator)
+print("Reversed string:", reversed_string)
+
+
+print("---------------------\n")
+
+string_6 = "It's only after we've lost everything " \
+           "that we're free to do anything\n"
+print(string_6)
+
+
+# splitting the string
+print("Splitting the string...\n{0}"
+      .format(string_6.split()),
+      "\n")
+ 
+# splitting the string on the letter e
+print("Splitting the string on the letter e...\n{0}"
+      .format(string_6.split("e")),
+      "\n")
