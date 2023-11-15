@@ -1,9 +1,10 @@
+
 from ticket import Ticket
 print('welcome to service desk')
 
 tickets = []
 while True:
-    akction = input(
+    action = input(
         '\n\nSELECT OPTION: 1: create new ticket. 2: reopen ticket. 3: list all tickets. 4: resolve ticket. ')
     if action == '1':
         operator_name = input('enter creator name (operator): ')
@@ -19,7 +20,7 @@ while True:
         ticket_id = int(input('enter the ticket ID: '))-2001
         reopen_reason = input('enter reason for reopening: ')
         tickets[ticket_id].reopen_ticket("Caller", reopen_reason)
-        # tickets[ticket_id].submit_comment("Caller", reopen_reason)
+        tickets[ticket_id].submit_comment("Caller", reopen_reason)
 
     elif action == '3':
         for i in tickets:

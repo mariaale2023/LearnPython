@@ -1,3 +1,5 @@
+
+import random
 # user_input = int(input("Please enter the number of times "
 #                        "that you wish to see the message."))
 

@@ -1,7 +1,7 @@
 class Ticket:
     ticket_counter = 2000  # Class variable to auto-generate ticket numbers
 
-    def __init__(self, ticket_creator: str, caller_name: str, caller_email: str, description: str):
+    def __init__(self, id_creator: str, caller_name: str, caller_email: str, description: str):
         """
         Initializes a new Ticket instance.
 
@@ -11,7 +11,7 @@ class Ticket:
         - caller_email (str): The email address of the person reporting the issue.
         - description (str): A brief description of the issue or request.
         """
-        self.ticket_creator = ticket_creator
+        self.ticket_creator = id_creator
         self.caller_name = caller_name
         self.caller_email = caller_email
         self.ticket_number = self.ticket_counter
